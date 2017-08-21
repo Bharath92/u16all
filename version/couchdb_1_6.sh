@@ -16,7 +16,7 @@ sudo adduser \
   "CouchDB Administrator" couchdb
 
 # Install prerequisites
-sudo apt-get install -y \
+sudo apt-get install -qq -y \
   build-essential \
   erlang-base-hipe \
   erlang-dev \
@@ -28,11 +28,11 @@ sudo apt-get install -y \
   libcurl4-openssl-dev
 
 # Install CouchDB
-sudo apt-get install software-properties-common -y
+sudo apt-get install -qq software-properties-common -y
 sudo add-apt-repository ppa:couchdb/stable -y
-sudo apt-get update
+sudo apt-get update -qq
 sudo apt-get remove couchdb couchdb-bin couchdb-common -yf
-sudo apt-get install couchdb -y
+sudo apt-get install -qq couchdb -y
 
 # Postinstallation setup
 sudo couchdb -d

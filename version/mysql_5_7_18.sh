@@ -3,7 +3,7 @@
 echo "================= setting MySQL preReqs ==================="
 sudo groupadd mysql
 sudo useradd -g mysql mysql
-apt-get install libaio1
+apt-get install -qq libaio1
 mkdir -p /etc/mysql
 mkdir /var/log/mysql
 
@@ -33,4 +33,4 @@ chown -R mysql /var/run/mysqld
 chown -R mysql /usr/local/mysql
 
 echo "=========== Installing mysql clients 5.7 ==============="
-apt-get install mysql-client-5.7
+apt-get install -qq mysql-client-5.7

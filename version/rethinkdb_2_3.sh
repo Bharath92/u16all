@@ -3,7 +3,7 @@
 echo "================= Installing RethinkDB ==================="
 
 # # Install the dependencies
-# sudo apt-get install -y \
+# sudo apt-get install -qq -y \
 #   m4 \
 #   build-essential \
 #   protobuf-compiler \

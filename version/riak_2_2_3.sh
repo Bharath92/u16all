@@ -3,7 +3,7 @@
 echo "================= Installing Riak 2.2.3  ==================="
 
 # Install dependencies
-sudo apt-get install -y \
+sudo apt-get install -qq -y \
   build-essential \
   libc6-dev-i386 \
   libncurses5-dev \
@@ -19,4 +19,4 @@ sudo apt-get install -y \
 
 
 curl -s https://packagecloud.io/install/repositories/basho/riak/script.deb.sh | sudo bash
-sudo apt-get install riak=2.2.3-1
+sudo apt-get install -qq riak=2.2.3-1
