@@ -25,11 +25,11 @@ sudo apt-get update && apt-get install -y \
   xdg-utils \
   --no-install-recommends
 
-echo "================= Installing Chrome ==================="
-sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb
-sudo apt-get install -y -f
-sudo rm -f google-chrome-stable_current_amd64.deb
+# echo "================= Installing Chrome ==================="
+# sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+# sudo dpkg -i google-chrome-stable_current_amd64.deb
+# sudo apt-get install -y -f
+# sudo rm -f google-chrome-stable_current_amd64.deb
 
 echo "================= Installing Chrome driver ==================="
 sudo wget http://chromedriver.storage.googleapis.com/2.29/chromedriver_linux64.zip
