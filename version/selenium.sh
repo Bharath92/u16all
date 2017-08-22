@@ -41,15 +41,15 @@ sudo apt-get install -qq firefox chromium-browser;
 sudo ln -s /usr/bin/chromium-browser /usr/bin/chrome;
 sudo apt-get -f install;
 
-wget -q -O- https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-sudo apt-get update -qq
-sudo apt-get install -qq google-chrome-stable
+# wget -q -O- https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+# sudo apt-get update -qq
+# sudo apt-get install -qq google-chrome-stable
 
-echo "================= Installing Opera ==================="
-wget -q -O-  http://deb.opera.com/archive.key | sudo apt-key add -
-sudo sh -c 'echo "deb http://deb.opera.com/opera/ stable non-free" > /etc/apt/sources.list.d/opera.list'
-sudo apt-get update -qq
-sudo apt-get install -qq -y opera
+# echo "================= Installing Opera ==================="
+# wget -q -O-  http://deb.opera.com/archive.key | sudo apt-key add -
+# sudo sh -c 'echo "deb http://deb.opera.com/opera/ stable non-free" > /etc/apt/sources.list.d/opera.list'
+# sudo apt-get update -qq
+# sudo apt-get install -qq -y opera
 
 echo "================= Installing Selenium ==================="
 sudo mkdir /usr/local/selenium >/dev/null 2>&1
